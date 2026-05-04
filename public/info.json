@@ -1,0 +1,98 @@
+[
+    {
+        "name": "HR Hub",
+        "point": {
+            "x": 558,
+            "y": 100
+        },
+        "color": "#B39DDB",
+        "color2": "#413F67",
+        "description": "This is the main hub of the HR system that I started building while working at <b>Kariera d.o.o.</b>, then completed during my <a href='https://repozitorij.uni-lj.si/IzpisGradiva.php?lang=slv&id=180735'>diploma</a>.<br><br>It consists of 4 parts: <ol><li><b>Project Form - Recruiter creates a form of a company for which they'll employ for (salaries, transportation, requirements,...).</b></li><li><b>Boards - It's a generic solution, in the specific system its used to create a user in the mobile app via Automations.</b></li><li><b>Mobile App - The recruitee has access to all of the info about their employment progress (status, required documents, documents (payroll, contracts,...), requests, notifications)</b></li><li><b>Slack - Used by the recruiter to manage the data of the mobile app (accepting/declining documents, uploading documents, sending notifications,...)</b></li></ol><br> There are only 3 subnodes, because the Slack API is integrated into the backend of the mobile app.",
+        "repo": "https://github.com/ziga11/hr_system_hub",
+        "children": [
+            {
+                "name": "Project Form",
+                "color2": "#2A476e",
+                "description": "<p><b>The Configuration Engine</b><br>A specialized web module designed for the initial phase of the recruitment process, acting as a dynamic specification tool for job openings</p><ul><li><b>Dynamic Schema:</b> Supports the generation of custom input fields (text, file uploads) and a WYSIWYG editor to define specific company requirements such as salaries, competencies, and workplace benefits.</li><li><b>Automated Documentation:</b> Based on the project's parameters, the system automatically determines the required set of documents for future candidates, minimizing human error.</li><li><b>Collaborative Access:</b> Features multi-user permissions, allowing HR teams to co-manage project specifications and job listings.</li</ul>",
+                "repo": {
+                    "frontend": "https://github.com/ziga11/proj-obrazec",
+                    "backend": "https://github.com/ziga11/proj-obrazec-backend"
+                },
+                "point": {
+                    "x": 350,
+                    "y": -250
+                },
+                "color": "#40C4FF"
+            },
+            {
+                "name": "Boards",
+                "description": "<p><b>The Operational Nerve Center</b><br>A high-performance administrative interface used to manage the candidate database and internal HR workflows through dynamic data structures</p><ul><li><b>Real-Time Synchronization:</b> Built with TypeScript and Supabase, providing instantaneous updates across the system for candidate tracking, organizational charts, and absence management.</li><li><b>Event-Driven Automations:</b> Utilizes webhooks and event triggers to automate manual tasks, such as the immediate generation of mobile app accounts when a new candidate is added to the board.</li><li><b>Customizable Tabular Layouts:</b> Allows recruiters to build and modify data views on the fly, adapting to the evolving needs of the recruitment pipeline.</li></ul>",
+                "point": {
+                    "x": 628,
+                    "y": -500
+                },
+                "repo": "https://github.com/ziga11/diploma-boards",
+                "color": "#40C4FF",
+                "color2": "#2A476E"
+            },
+            {
+                "name": "Mobile",
+                "description": "<p><b>The Candidate Hub & Integrated Logistics</b><br>A native mobile experience (iOS/Android) that bridges the gap between candidates and HR staff, supported by a robust, modular backend</p><ul><li><b>Candidate Empowerment:</b> Provides users with a secure portal to track employment status, manage work permits, and access a digital archive of contracts and payslips.</li><li><b>High-Performance Backend:</b> Developed in <b>Go (Golang)</b> to handle complex API logic, cryptography, and real-time push notifications via Firebase.</li><li><b>Integrated Slack API:</b> The backend acts as a bridge to Slack, allowing recruiters to manage the mobile app ecosystem directly from their primary communication tool. Through <b>Slash Commands</b> and <b>Interactive Components</b>, HR can:<ul><li>Review and approve candidate documentation in real-time.</li><li>Update employment statuses and trigger automated mobile notifications.</li><li>Distribute documents and manage candidate requests without leaving the Slack interface.</li></ul></li></ul>",
+                "repo": {
+                    "frontend": "https://github.com/ziga11/diploma-mobileapp",
+                    "backend": "https://github.com/ziga11/diploma-mobile-backend"
+                },
+                "point": {
+                    "x": 750,
+                    "y": -250
+                },
+                "color": "#40C4FF",
+                "color2": "#2A476E"
+            }
+        ]
+    },
+    {
+        "name": "MMO Game",
+        "description": "<p>A construction of a basic MMO game using WebGL2 without external libarires like ThreeJS. I developed it single handedly in the second year of university for the subject Computer Graphics. It has a lot of interesting implementations and optimizations, such as using Octrees to figure out where the ray intersected the polygon, using linear interpolation (lerp) to smooth out the walk of models etc. During the development I figured out how to optimize JS code using ArrayBuffers, how visualize 3D models onto a screen, how the coordinate system transformations work, how raycasting works, a bunch of math like ray triangle intersections, the complexity and the smoothness of using quaternions, A* pathfinding and much more.</p>",
+        "repo": "https://github.com/ziga11/MMOGame/",
+        "color": "#7DE5FF",
+        "color2": "#364E6E",
+        "point": {
+            "x": 375,
+            "y": 450
+        }
+    },
+    {
+        "name": "Candidate Matching",
+        "description": "<p>A python script that returns the most suitable positions for each person using AI to parse the CVs and webscrapers like selenium and beautifulsoup to scrape the top HR firms for available positions</p>",
+        "color": "#03DAC6",
+        "color2": "#1E4C63",
+        "repo": "https://github.com/ziga11/candidate-matching/",
+        "point": {
+            "x": 558,
+            "y": 800
+        }
+    },
+    {
+        "name": "Best Days Science Website",
+        "color": "#7DE5FF",
+        "color2": "#364E6E",
+        "description": "<p>Developed the official website for an <b>interdisciplinary STEM event.</b> using Typescript with Vite, focusing on responsive design and clear communication of event logistics (hackathons, case studies, and workshops) for a high-traffic student audience. It can be seen on <a href='https://www.best-dnevi-znanosti.si/'>here</a></p>",
+        "repo": "https://github.com/BEST-Lj/bestdays",
+        "point": {
+            "x": 1350,
+            "y": 100
+        }
+    },
+    {
+        "name": "Miscrits 2D Recreation",
+        "color": "#03DAC6",
+        "color2": "#1E4C63",
+        "description": "<p>A real basic implementation of an old facebook game named 'Miscrits: World of Creatures'. It was implemented in C# using the MonoGame framework within 1-2 months as a project for a uni subject. It uses texture atlases for optimizations and pixel perfect collision detection.",
+        "repo": "https://github.com/ziga11/TINR/",
+        "point": {
+            "x": 1350,
+            "y": 800
+        }
+    }
+]
